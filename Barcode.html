@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BarCode Generator</title>
+        <style>
+body {
+    margin:10px;
+    color:blue;
+    text-align:center;
+}
+button{
+    width:95%;
+    padding:10px;
+    text-align:center;
+}
+fieldset{
+    left:5%;
+    width:60%;
+    padding:65px;
+    text-align:center;
+}
+form, input{ text-align:center }
+label{
+text-align<:center;
+    padding:2px;
+    border:none;
+    text-align:center;
+}
+#out{
+    padding:30px;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-size:45px;
+    color:"red";
+    text-align:center;}
+#out2{
+    padding:10px;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-size:25px;
+    color:"red";
+    text-align:center;}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
+<script>
+    function out(){
+    var a=document.getElementById("inp").value;
+    a.toString();
+    var b =document.getElementById("out").innerHTML = "chillpill:<br>"+"906750852934"+"-"+a;
+    var c =document.getElementById("out2").innerHTML = "906750852934"+"-"+a;
+}
+</script>
+    </head>
+    <body align="center">
+    <h4>BAR CODE GENERATOR </h4>
+    <fieldset>
+        <input type="number" id="inp" placeholder="enter numbers" >
+        <form action="/action_page.php" id="usrform">
+        <input type="number" name="usrform" id="inp">
+  <button type="submit" id="out"></button>
+  <button onClick="out()"><br>GET OUTPUT</button>
+</form>
+<pre>
+    
+</pre>
+
+<textarea name="comment" form="usrform" id="out2" placeholder="Touch Here"></textarea>
+        <output id="out2" ></output>
+        </fieldset>
+        </center>
+    </body>
+</html>
